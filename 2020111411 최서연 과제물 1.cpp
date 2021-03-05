@@ -15,8 +15,8 @@ int main() {
 
 	for(int i=0;i<SUBJECT_NUM;i++){
 		for(int j = 0;j<STUDENT_NUM;j++){
-			scoreList[i][j] = rand()%100;
-			sum[i]+=scoreList[i][j];
+			scoreList[i][j] = rand()%101;
+			sum[i] += scoreList[i][j];
 		}
 	}
 
