@@ -11,13 +11,13 @@ int main() {
 
 	srand(time(0));
 
-	int sum[SUBJECT_NUM] = {0};
+	double sum[SUBJECT_NUM] = {0};
 
 	for(int i=0;i<SUBJECT_NUM;i++){
 		for(int j = 0;j<STUDENT_NUM;j++){
 			scoreList[i][j] = rand()%101;
 			sum[i] += scoreList[i][j];
-			cout << scoreList[i][j];
+			cout << scoreList[i][j] << " " << sum[i] << "|  |";
 		}
 	}
 
