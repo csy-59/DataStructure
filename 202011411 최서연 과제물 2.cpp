@@ -28,6 +28,20 @@ int main() {
 		printf("%.1f\n", sum[i] / STUDENT_NUM);
 	}
 
+	double studentSum[STUDENT_NUM] = { 0 };
+
+	for (int j = 0;j < STUDENT_NUM;j++) {
+		for (int i = 0;i < SUBJECT_NUM;i++) {
+			studentSum[j] += subjectList[i][j];
+		}
+	}
+
+	cout << "Followings are Student average:";
+
+	for (int i = 0;i < STUDENT_NUM;i++) {
+		printf("%d : %.1f", i + 1, studentSum[i] / 2);
+	}
+
 
 	return 0;
 }
