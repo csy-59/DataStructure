@@ -29,7 +29,7 @@ int main() {
 
 	for (int i = 0;i < CLASS_NUM;i++) {
 		for (int j = 0;j < SUBJECT_NUM;j++) {
-			cout << i << " - " << subjectList[j] << ": ";
+			cout << "Class " << i + 1 << " - " << subjectList[j] << ": ";
 			printf("%.1f\n", classScoreSum[i][j] / STUDENT_NUM);
 		}
 	}
