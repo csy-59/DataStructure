@@ -17,7 +17,6 @@ int main() {
 		for(int j = 0;j<STUDENT_NUM;j++){
 			scoreList[i][j] = rand()%101;
 			sum[i] += scoreList[i][j];
-			cout << scoreList[i][j] << " " << sum[i] << "|  |";
 		}
 	}
 
