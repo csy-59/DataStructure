@@ -32,14 +32,14 @@ int main() {
 
 	for (int j = 0;j < STUDENT_NUM;j++) {
 		for (int i = 0;i < SUBJECT_NUM;i++) {
-			studentSum[j] += subjectList[i][j];
+			studentSum[j] += scoreList[i][j];
 		}
 	}
 
-	cout << "Followings are Student average:";
+	cout << "Followings are Student average:" << endl;
 
 	for (int i = 0;i < STUDENT_NUM;i++) {
-		printf("%d : %.1f", i + 1, studentSum[i] / 2);
+		printf("%d : %.1f\n", i + 1, studentSum[i] / 3);
 	}
 
 
